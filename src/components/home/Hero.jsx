@@ -1,48 +1,84 @@
-import Button from '../common/Button.jsx'
-
-const capabilities = [
-  'Web Development',
-  'Cybersecurity',
-  'Hosting',
-  'Payment Integrations',
-  'ICT Consultancy',
-  'Enterprise Solutions',
-]
+import Button from "../common/Button.jsx";
+import heroImage from "../../assets/images/hero.png";
 
 export default function Hero() {
   return (
-    <section className="section-shell pt-8 md:pt-12">
-      <div className="surface-card relative overflow-hidden bg-dark px-6 py-12 text-white md:px-12 md:py-16">
-        <div className="absolute -right-28 -top-28 h-80 w-80 rounded-full border-[70px] border-primary/10" aria-hidden="true" />
-        <div className="absolute bottom-0 right-0 h-1/2 w-1/3 bg-gradient-to-tl from-primary/20 to-transparent" aria-hidden="true" />
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#fffdf7] to-white">
+      {/* Background Glow */}
+      <div className="absolute left-0 top-0 h-[600px] w-[600px] rounded-full bg-primary/5 blur-3xl" />
+      <div className="absolute right-0 top-0 h-[500px] w-[500px] rounded-full bg-primary/10 blur-3xl" />
 
-        <div className="relative grid items-end gap-10 lg:grid-cols-[1.4fr_0.6fr]">
+      <div className="mx-auto flex min-h-[88vh] w-[min(1280px,calc(100%-2rem))] items-center">
+        <div className="grid w-full items-center gap-20 lg:grid-cols-[58%_42%]">
+          {/* LEFT */}
           <div>
-            <p className="mb-5 text-xs font-bold uppercase tracking-[0.24em] text-primary">PAYIANI TECHNOLOGIES</p>
-            <h1 className="max-w-4xl text-4xl font-semibold leading-[1.08] md:text-6xl lg:text-7xl">
-              Transforming Ideas Into <span className="text-primary">Digital Solutions.</span>
+            <span className="inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold uppercase tracking-widest text-primary">
+              PAYIANI TECHNOLOGIES
+            </span>
+
+            <h1 className="mt-8 max-w-3xl text-5xl font-extrabold leading-[1.05] tracking-tight text-dark md:text-6xl xl:text-7xl">
+              We Build Secure,
+              <br />
+              Scalable &
+              <br />
+              <span className="text-primary">
+                Innovative Digital Solutions.
+              </span>
             </h1>
-            <p className="mt-6 max-w-2xl text-base leading-8 text-white/70 md:text-lg">
-              Web Development, Cybersecurity, Hosting, Payment Integrations, ICT Consultancy, and Enterprise Solutions.
+
+            <p className="mt-8 max-w-2xl text-xl leading-9 text-gray-600">
+             Payiani Technologies delivers innovative, secure, and scalable technology solutions, from custom web development and cybersecurity to cloud hosting, enterprise software, ICT consultancy, deployment, and seamless payment integrations-helping Organizations & Businesses accelerate growth and digital transformation.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Button as="a" href="/contact">Request a Quote</Button>
-              <Button as="a" href="/services" className="border-white/20 bg-white/5 text-white hover:border-primary hover:bg-primary/10">
-                View Our Services
+
+            <div className="mt-12 flex flex-wrap gap-5">
+              <Button as="a" href="/contact">
+                Request a Quote
+              </Button>
+
+              <Button
+                as="a"
+                href="/services"
+                className="border border-primary bg-white text-primary hover:bg-primary hover:text-white"
+              >
+                Explore Services
               </Button>
             </div>
           </div>
 
-          <div className="grid gap-2 border-l border-white/15 pl-5">
-            {capabilities.map((capability, index) => (
-              <div key={capability} className="flex items-center gap-3 py-2 text-sm text-white/75">
-                <span className="text-xs font-bold text-primary">0{index + 1}</span>
-                <span>{capability}</span>
+          {/* RIGHT */}
+          <div className="relative flex justify-center lg:justify-end">
+            {/* Image */}
+            <img
+              src={heroImage}
+              alt="PAYIANI Technologies"
+              className="w-full max-w-[520px] rounded-[32px] object-cover shadow-[0_35px_80px_rgba(0,0,0,.15)]"
+            />
+
+            {/* Floating Card */}
+            <div className="absolute -right-8 top-8 rounded-2xl bg-white px-6 py-4 shadow-xl">
+              <div className="flex items-center gap-3">
+                <div className="h-3 w-3 rounded-full bg-green-500"></div>
+              
               </div>
-            ))}
+            </div>
+
+            {/* Floating Card */}
+            <div className="absolute -left-6 bottom-10 rounded-2xl bg-white px-6 py-4 shadow-xl">
+              <div className="flex items-center gap-3">
+                <div className="h-3 w-3 rounded-full bg-primary"></div>
+                <span className="font-semibold text-gray-700">
+                  100% Reliable
+                </span>
+              </div>
+            </div>
+
+            {/* Floating Card */}
+            <div className="absolute -right-4 bottom-24 rounded-2xl bg-dark px-6 py-4 shadow-xl">
+          
+            </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

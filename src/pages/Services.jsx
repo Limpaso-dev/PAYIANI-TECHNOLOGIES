@@ -46,7 +46,7 @@ export default function Services() {
             <h2 className="text-3xl font-semibold text-dark">Not sure which service fits?</h2>
             <p className="mt-3 text-dark/70">Tell us what you want to achieve. We’ll help shape the right technical approach.</p>
           </div>
-          <Button as="a" href="/contact" className="mt-6 border-dark bg-dark text-white md:mt-0">Talk to PAYIANI</Button>
+          <Button as="a" href="/contact" className="mt-6 border-dark bg-dark text-white md:mt-0">Talk to Payiani Technologies</Button>
         </div>
       </section>
     </MainLayout>

@@ -7,7 +7,7 @@ export default function ServicesPreview() {
       <SectionTitle
         eyebrow="What we do"
         title="Services"
-        description="From a first website to secure enterprise infrastructure, PAYIANI brings strategy, engineering, and dependable support together."
+        description="From a first website to secure enterprise infrastructure, Payiani Technologies brings strategy, engineering, and dependable support together."
       />
       <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {services.map((service) => (

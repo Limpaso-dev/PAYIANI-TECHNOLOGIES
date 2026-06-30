@@ -11,11 +11,11 @@ export default function About() {
           </span>
 
           <h1 className="mt-5 text-4xl font-bold text-dark md:text-6xl">
-            Empowering Businesses Through Technology
+            Your Tech World starts here
           </h1>
 
           <p className="mt-6 max-w-4xl text-lg leading-8 text-muted">
-            PAYIANI Technologies is a modern technology company dedicated to
+            Payiani Technologies is a modern technology company dedicated to
             helping businesses, organizations, startups, and institutions
             leverage innovative digital solutions to improve efficiency,
             increase productivity, and accelerate growth.
@@ -32,7 +32,7 @@ export default function About() {
           </p>
 
           <p className="mt-5 max-w-4xl text-lg leading-8 text-muted">
-            At PAYIANI Technologies, we believe technology should simplify
+            At Payiani Technologies, we believe technology should simplify
             business operations rather than complicate them. That's why we
             combine technical expertise, industry best practices, and
             innovative thinking to build reliable digital products that help
@@ -125,7 +125,7 @@ export default function About() {
         {/* Why Choose Us */}
         <div className="mt-12 rounded-3xl border border-dark/10 bg-dark p-10 text-white">
           <h2 className="text-3xl font-bold">
-            Why Businesses Choose PAYIANI Technologies
+            Why Businesses Choose Payiani Technologies
           </h2>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2">
@@ -165,7 +165,7 @@ export default function About() {
             Whether you're a startup launching your first product, a growing
             business looking to digitize operations, or an established
             organization seeking enterprise-grade software solutions,
-            PAYIANI Technologies is your trusted technology partner. We are
+            Payiani Technologies is your trusted technology partner. We are
             passionate about transforming ideas into secure, scalable, and
             impactful digital solutions that drive long-term success.
           </p>

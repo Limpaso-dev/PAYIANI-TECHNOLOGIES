@@ -1,6 +1,6 @@
 const stats = [
   ['20+', 'Projects Delivered'],
-  ['15+', 'Clients Served'],
+  ['20+', 'Clients Served'],
   ['10+', 'Systems Developed'],
   ['24/7', 'Support Availability'],
 ]

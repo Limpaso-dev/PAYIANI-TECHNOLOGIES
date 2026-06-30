@@ -7,7 +7,7 @@ export default function Testimonials() {
       <SectionTitle
         eyebrow="Client feedback"
         title="Testimonials"
-        description="What clients value most about working with PAYIANI Technologies."
+        description="What clients value most about working with Payiani Technologies."
       />
       <div className="mt-8 grid gap-4 lg:grid-cols-3">
         {testimonials.map((item) => (

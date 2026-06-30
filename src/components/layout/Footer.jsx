@@ -24,7 +24,7 @@ export default function Footer() {
           </div>
 
           <p className="mt-6 leading-7 text-gray-400">
-            PAYIANI Technologies is committed to delivering innovative,
+            Payiani Technologies is committed to delivering innovative,
             secure, and scalable digital solutions that empower businesses,
             organizations, and startups to thrive in today's digital world.
           </p>
@@ -76,13 +76,15 @@ export default function Footer() {
           </h3>
 
           <ul className="space-y-3 text-gray-400">
-            <li>Web Design</li>
             <li>Web Development</li>
+            <li>Web Design</li>
             <li>System Development</li>
             <li>Cybersecurity</li>
             <li>Cloud Hosting</li>
             <li>ICT Consultancy</li>
             <li>M-Pesa API Integration</li>
+            <li>Mobile App Development</li>
+            <li>Graphics Design</li>
             <li>Payment Gateway Integration</li>
           </ul>
         </div>
@@ -96,7 +98,7 @@ export default function Footer() {
           <div className="space-y-5 text-gray-400">
             <div className="flex items-start gap-3">
               <MapPin className="mt-1 text-primary" size={18} />
-              <span>Nairobi, Kenya</span>
+              <span>Karen, Nairobi</span>
             </div>
 
             <div className="flex items-center gap-3">
@@ -123,12 +125,12 @@ export default function Footer() {
             . All Rights Reserved.
           </p>
 
-          <p>Empowering Businesses Through Technology.</p>
+          <p>Your Tech World Starts Here.</p>
 
           <p>
-            Developed & Managed by{" "}
+            Developed & Maintained by{" "}
             <span className="font-semibold text-primary">
-              PAYIANI Technologies
+              Payiani Technologies
             </span>
           </p>
         </div>

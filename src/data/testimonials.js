@@ -2,7 +2,7 @@ export const testimonials = [
   {
     name: 'Genesis Geochemical Laboratory',
     role: 'Laboratory Services',
-    quote: 'PAYIANI translated our technical requirements into a clear, professional digital presence and kept the process easy to follow.',
+    quote: 'Payiani Technologies translated our technical requirements into a clear, professional digital presence and kept the process easy to follow.',
   },
   {
     name: 'GreenWatch Africa',

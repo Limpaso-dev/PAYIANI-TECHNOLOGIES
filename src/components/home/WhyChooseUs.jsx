@@ -14,8 +14,8 @@ export default function WhyChooseUs() {
     <section className="bg-dark text-white">
       <div className="section-shell">
         <SectionTitle
-          eyebrow="Why choose PAYIANI"
-          title="Why Choose PAYIANI"
+          // eyebrow="Why choose PAYIANI"
+          title="Why Choose Payiani Technologies?"
           description="We combine technical depth with clear communication, disciplined delivery, and support that lasts."
           inverse
         />

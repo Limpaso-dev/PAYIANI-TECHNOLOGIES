@@ -6,7 +6,7 @@ export default function FeaturedProjects() {
     <section className="section-shell">
       <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <SectionTitle
-          eyebrow="Featured projects"
+          // eyebrow="Featured projects"
           title="Featured Projects"
           description="Digital experiences shaped around each organization’s identity, audience, and operational goals."
         />

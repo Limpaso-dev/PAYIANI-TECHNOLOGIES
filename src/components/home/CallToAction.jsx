@@ -11,7 +11,7 @@ export default function CallToAction() {
             <h2 className="mt-3 max-w-2xl text-3xl font-semibold leading-tight text-dark md:text-5xl">
               Ready to Build Your Next Digital Solution?
             </h2>
-            <p className="mt-4 text-dark/70">Contact PAYIANI Technologies Today.</p>
+            <p className="mt-4 text-dark/70">Contact Payiani Technologies Today.</p>
           </div>
           <Button as="a" href="/contact" className="border-dark bg-dark px-7 text-white hover:border-dark hover:bg-dark/90">
             Request a Quote

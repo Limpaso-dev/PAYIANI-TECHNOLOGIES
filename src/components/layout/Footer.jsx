@@ -76,16 +76,13 @@ export default function Footer() {
           </h3>
 
           <ul className="space-y-3 text-gray-400">
-            <li>Web Development</li>
-            <li>Web Design</li>
+            <li>Web Design &amp; Web Development</li>
             <li>System Development</li>
             <li>Cybersecurity</li>
             <li>Cloud Hosting</li>
-            <li>ICT Consultancy</li>
-            <li>M-Pesa API Integration</li>
-            <li>Mobile App Development</li>
-            <li>Graphics Design</li>
-            <li>Payment Gateway Integration</li>
+            <li>Digital Literacy Training</li>
+            <li>Mpesa-API intergration</li>
+            <li>ICT consultancy</li>
           </ul>
         </div>
 

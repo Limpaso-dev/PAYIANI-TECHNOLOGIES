@@ -7,7 +7,7 @@ export const testimonials = [
   {
     name: 'GreenWatch Africa',
     role: 'Environmental Organization',
-    quote: 'The team listened carefully, communicated clearly, and delivered a platform that reflects both our mission and our audience.',
+    quote: 'The team took time to understand our environmental mission and the communities we serve. They delivered an accessible platform that helps us share our work, elevate local perspectives, and encourage informed action for a more sustainable future.',
   },
   {
     name: 'CME Nexus',

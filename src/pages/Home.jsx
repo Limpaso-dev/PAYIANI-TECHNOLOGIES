@@ -17,6 +17,11 @@ export default function Home() {
       <WhyChooseUs />
       <Technologies />
       <FeaturedProjects />
+      <section className="section-shell pt-0">
+        <p className="mx-auto max-w-4xl rounded-3xl border border-dark/10 bg-white p-6 text-center leading-7 text-muted shadow-sm md:p-8">
+          We use accessible digital solutions to support climate justice, helping communities, schools, and organizations build knowledge, share local priorities, and take informed action for a more sustainable future.
+        </p>
+      </section>
       <Testimonials />
       <CallToAction />
     </MainLayout>

@@ -1,4 +1,18 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "payiani-technologies.vercel.app" }],
+      "destination": "https://payianitechnologies.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.payianitechnologies.com" }],
+      "destination": "https://payianitechnologies.com/:path*",
+      "permanent": true
+    }
+  ]
 }

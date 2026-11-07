@@ -1,14 +1,12 @@
 import MainLayout from '../components/layout/MainLayout.jsx'
+import PageHeader from '../components/common/PageHeader.jsx'
 
 export default function Policy() {
   return (
     <MainLayout>
-      <section className="mx-auto w-[min(1120px,calc(100%-2rem))] py-16">
-        <div className="rounded-3xl border border-dark/10 bg-white p-6 shadow-2xl shadow-black/10 md:p-8">
-          <h1 className="text-4xl font-semibold text-dark md:text-6xl">Privacy Policy</h1>
-          <p className="mt-3 text-muted">Insert your privacy policy text here.</p>
-        </div>
-      </section>
+      <PageHeader title="Privacy Policy">
+        <p className="mt-5">Our privacy policy will be published here.</p>
+      </PageHeader>
     </MainLayout>
   )
 }

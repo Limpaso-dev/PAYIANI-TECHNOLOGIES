@@ -1,14 +1,17 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { APP_NAME } from "../../utils/constants";
 import logo from "../../assets/images/logo.png";
+import { serviceDetails } from "../../data/serviceDetails.js";
+import { industries } from "../../data/industries.js";
+import { BUSINESS } from "../../seo/site.js";
 
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-20 bg-dark text-white">
+    <footer className="bg-dark text-white">
       {/* Top Section */}
-      <div className="mx-auto grid w-[min(1200px,calc(100%-2rem))] gap-12 py-16 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto grid w-[min(1200px,calc(100%-2rem))] gap-12 py-16 md:grid-cols-2 lg:grid-cols-5">
         {/* Company */}
         <div>
           <div className="flex items-center gap-3">
@@ -76,13 +79,30 @@ export default function Footer() {
           </h3>
 
           <ul className="space-y-3 text-gray-400">
-            <li>Web Design &amp; Web Development</li>
-            <li>System Development</li>
-            <li>Cybersecurity</li>
-            <li>Cloud Hosting</li>
-            <li>Digital Literacy Training</li>
-            <li>Mpesa-API intergration</li>
-            <li>ICT consultancy</li>
+            {serviceDetails.map((service) => (
+              <li key={service.slug}>
+                <a href={`/services/${service.slug}`} className="transition hover:text-primary">
+                  {service.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Industries */}
+        <div>
+          <h3 className="mb-6 text-xl font-semibold text-primary">
+            Industries
+          </h3>
+
+          <ul className="space-y-3 text-gray-400">
+            {industries.map((industry) => (
+              <li key={industry.slug}>
+                <a href={`/industries/${industry.slug}`} className="transition hover:text-primary">
+                  {industry.shortName}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -98,15 +118,15 @@ export default function Footer() {
               <span>Karen, Nairobi</span>
             </div>
 
-            <div className="flex items-center gap-3">
+            <a href={`tel:${BUSINESS.telephone}`} className="flex items-center gap-3 transition hover:text-primary">
               <Phone className="text-primary" size={18} />
-              <span>+2547 5735 8237</span>
-            </div>
+              <span>{BUSINESS.telephoneDisplay}</span>
+            </a>
 
-            <div className="flex items-center gap-3">
+            <a href={`mailto:${BUSINESS.email}`} className="flex items-center gap-3 transition hover:text-primary">
               <Mail className="text-primary" size={18} />
-              <span>payianitech@gmail.com</span>
-            </div>
+              <span className="break-all">{BUSINESS.email}</span>
+            </a>
           </div>
         </div>
       </div>
@@ -115,7 +135,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex w-[min(1200px,calc(100%-2rem))] flex-col items-center justify-between gap-4 py-6 text-center text-sm text-gray-400 md:flex-row md:text-left">
           <p>
-            © {year}{" "}
+            © <span suppressHydrationWarning>{year}</span>{" "}
             <span className="font-semibold text-primary">
               {APP_NAME}
             </span>

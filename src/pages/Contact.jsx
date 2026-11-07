@@ -1,26 +1,30 @@
 import MainLayout from '../components/layout/MainLayout.jsx'
 import ContactForm from '../components/contact/ContactForm.jsx'
 import { Mail, MapPin, Phone } from 'lucide-react'
+import { BUSINESS } from '../seo/site.js'
 
 export default function Contact() {
   return (
     <MainLayout>
-      <section className="mx-auto w-[min(1120px,calc(100%-2rem))] py-16">
-        <div className="grid gap-8 rounded-3xl border border-dark/10 bg-white p-5 shadow-2xl shadow-black/10 sm:p-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-10 lg:p-10">
+      <section className="section-shell">
+        <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
           <aside className="min-w-0">
             <h1 className="text-4xl font-semibold text-dark md:text-5xl">Contact Us</h1>
-            <div className="mt-8 space-y-6 text-muted">
-              <div className="flex items-start gap-3">
+            <p className="mt-5 leading-7 text-muted">
+              Tell us about your website, software, cybersecurity, consultancy or training needs and we’ll get back to you with next steps.
+            </p>
+            <div className="mt-8 divide-y divide-dark/10 border-y border-dark/10 text-muted">
+              <div className="flex items-start gap-3 py-4">
                 <MapPin className="mt-1 shrink-0 text-primary" size={20} aria-hidden="true" />
-                <span>Karen, Nairobi</span>
+                <span>Karen, Nairobi, Kenya</span>
               </div>
-              <a className="flex min-w-0 items-start gap-3 transition hover:text-dark" href="tel:+254757358237">
+              <a className="flex min-w-0 items-start gap-3 py-4 transition hover:text-dark" href={`tel:${BUSINESS.telephone}`}>
                 <Phone className="mt-1 shrink-0 text-primary" size={20} aria-hidden="true" />
-                <span className="break-words">+2547 5735 8237</span>
+                <span className="break-words">{BUSINESS.telephoneDisplay}</span>
               </a>
-              <a className="flex min-w-0 items-start gap-3 transition hover:text-dark" href="mailto:payianitech@gmail.com">
+              <a className="flex min-w-0 items-start gap-3 py-4 transition hover:text-dark" href={`mailto:${BUSINESS.email}`}>
                 <Mail className="mt-1 shrink-0 text-primary" size={20} aria-hidden="true" />
-                <span className="break-all">payianitech@gmail.com</span>
+                <span className="break-all">{BUSINESS.email}</span>
               </a>
             </div>
           </aside>

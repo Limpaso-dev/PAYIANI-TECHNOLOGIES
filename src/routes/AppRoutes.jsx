@@ -1,39 +1,18 @@
-import About from '../pages/About.jsx'
-import Blog from '../pages/Blog.jsx'
-import Careers from '../pages/Careers.jsx'
-import Contact from '../pages/Contact.jsx'
-import FAQ from '../pages/FAQ.jsx'
-import Home from '../pages/Home.jsx'
-import NotFound from '../pages/NotFound.jsx'
-import Portfolio from '../pages/Portfolio.jsx'
-import Policy from '../pages/Policy.jsx'
-import Services from '../pages/Services.jsx'
-import Terms from '../pages/Terms.jsx'
+import { useEffect } from 'react'
+import { matchRoute, pageTitle } from '../seo/routes.js'
 
-const routes = {
-  '/': Home,
-  '/about': About,
-  '/services': Services,
-  '/portfolio': Portfolio,
-  '/contact': Contact,
-  '/blog': Blog,
-  '/careers': Careers,
-  '/faq': FAQ,
-  '/privacy-policy': Policy,
-  '/terms': Terms,
-}
+// `path` is passed explicitly during build-time prerendering; in the browser
+// it falls back to the current URL.
+export default function AppRoutes({ path }) {
+  const pathname = path ?? window.location.pathname
+  const route = matchRoute(pathname)
+  const Page = route.component
 
-function normalizePath(pathname) {
-  if (!pathname || pathname === '/') {
-    return '/'
-  }
+  // Prerendered HTML already has the right <title>; this keeps the dev server
+  // (which serves a bare index.html) in sync.
+  useEffect(() => {
+    document.title = pageTitle(route)
+  }, [route])
 
-  return pathname.endsWith('/') ? pathname.slice(0, -1) : pathname
-}
-
-export default function AppRoutes() {
-  const pathname = normalizePath(window.location.pathname)
-  const Page = routes[pathname] ?? NotFound
-
-  return <Page />
+  return <Page {...(route.props ?? {})} />
 }

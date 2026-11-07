@@ -8,19 +8,17 @@ const steps = [
 export default function Process() {
   return (
     <section className="section-shell">
-      <div className="surface-card bg-dark p-6 text-white md:p-10">
-        <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">How we work</p>
-        <h2 className="mt-3 text-3xl font-semibold md:text-4xl">A clear path from idea to launch.</h2>
-        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {steps.map(([number, title, description]) => (
-            <article key={title} className="border-t border-white/15 pt-5">
-              <span className="text-xs font-bold text-primary">{number}</span>
-              <h3 className="mt-4 text-lg font-semibold">{title}</h3>
-              <p className="mt-3 text-sm leading-6 text-white/60">{description}</p>
-            </article>
-          ))}
-        </div>
-      </div>
+      <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">How we work</p>
+      <h2 className="mt-3 text-3xl font-semibold text-dark md:text-4xl">A clear path from idea to launch.</h2>
+      <ol className="mt-10 grid gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-4">
+        {steps.map(([number, title, description]) => (
+          <li key={title} className="border-t-2 border-dark pt-5">
+            <span className="text-xs font-bold text-primary">{number}</span>
+            <h3 className="mt-4 text-lg font-semibold text-dark">{title}</h3>
+            <p className="mt-3 text-sm leading-6 text-muted">{description}</p>
+          </li>
+        ))}
+      </ol>
     </section>
   )
 }

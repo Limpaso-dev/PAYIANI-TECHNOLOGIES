@@ -22,7 +22,4 @@
     @apply mx-auto w-[min(1120px,calc(100%-2rem))] py-14 md:py-20;
   }
 
-  .surface-card {
-    @apply rounded-3xl border border-dark/10 bg-white shadow-[0_24px_70px_rgba(17,17,17,0.07)];
-  }
 }

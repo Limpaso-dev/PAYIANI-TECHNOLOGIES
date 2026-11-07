@@ -14,16 +14,15 @@ export default function WhyChooseUs() {
     <section className="bg-dark text-white">
       <div className="section-shell">
         <SectionTitle
-          // eyebrow="Why choose PAYIANI"
           title="Why Choose Payiani Technologies?"
           description="We combine technical depth with clear communication, disciplined delivery, and support that lasts."
           inverse
         />
-        <div className="mt-10 grid gap-px overflow-hidden rounded-3xl bg-white/10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-x-10 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           {reasons.map(([title, description], index) => (
-            <article key={title} className="bg-dark p-6 md:p-8">
+            <article key={title} className="border-t border-white/15 pt-6">
               <span className="text-xs font-bold text-primary">0{index + 1}</span>
-              <h3 className="mt-5 text-lg font-semibold">{title}</h3>
+              <h3 className="mt-4 text-lg font-semibold">{title}</h3>
               <p className="mt-3 leading-7 text-white/60">{description}</p>
             </article>
           ))}

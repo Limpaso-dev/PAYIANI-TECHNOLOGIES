@@ -1,9 +1,9 @@
 export default function ProjectCard({ title, category, description }) {
   return (
-    <article className="grid gap-3 rounded-2xl border border-dark/10 bg-light p-5">
-      <p className="text-sm text-primary">{category}</p>
-      <h3 className="text-lg font-semibold text-dark">{title}</h3>
-      {description ? <p className="leading-7 text-muted">{description}</p> : null}
+    <article className="border-t border-dark/15 pt-6">
+      <p className="text-xs font-bold uppercase tracking-[0.18em] text-primary">{category}</p>
+      <h2 className="mt-3 text-2xl font-semibold text-dark">{title}</h2>
+      {description ? <p className="mt-3 leading-7 text-muted">{description}</p> : null}
     </article>
   )
 }
